@@ -54,6 +54,8 @@ export default class App extends Component {
     let result;
     if (this.state.error) {
       result = <Error msg="Both fields are required"/>
+    } else if (this.state.resp.cod === 404) {
+      result = <Error msg="The requested city doesn't even exist"/>
     } else {
       result = <Weather result={ this.state.resp }/>
     }
