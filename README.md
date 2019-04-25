@@ -4,4 +4,4 @@
 
 
  You can test the project here:
- [I'm an inline-style link with title](https://georgesteel.github.io/WeatherReact/ "WeatherReact project")
+ [WeatherReact](https://georgesteel.github.io/WeatherReact/ "WeatherReact project")
