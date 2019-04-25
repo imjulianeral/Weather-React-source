@@ -15,8 +15,9 @@ export default class Form extends Component {
 
         // send it in props
         this.props.dataQuery(resp);
-        
+
         // clear the form
+        e.currentTarget.reset();
     }
 
     render() {

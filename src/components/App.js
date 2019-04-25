@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './Header';
 import Form from './Form';
 import Error from './Error';
+import Weather from './Weather';
 
 export default class App extends Component {
 
@@ -11,8 +12,10 @@ export default class App extends Component {
     resp: {}
   }
 
-  componentDidUpdate() {
-    this.reqAPI();
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.query !== this.state.query) {
+      this.reqAPI();
+    }
   }
 
   reqAPI = () => {
@@ -40,6 +43,7 @@ export default class App extends Component {
       });
     } else {
       this.setState({
+        error: false,
         query: resp
       });
     }
@@ -51,7 +55,7 @@ export default class App extends Component {
     if (this.state.error) {
       result = <Error msg="Both fields are required"/>
     } else {
-
+      result = <Weather result={ this.state.resp }/>
     }
 
     return (
