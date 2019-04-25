@@ -6,7 +6,7 @@ export default class Weather extends Component {
 
     if(!name || !weather || !main) return null;
 
-    const iconURL = `http://openweathermap.org/img/w/${weather[0].icon}.png`;
+    const iconURL = `https://openweathermap.org/img/w/${weather[0].icon}.png`;
     const kelvin = 273.15;
     const alt = `clima de ${name}`
 
