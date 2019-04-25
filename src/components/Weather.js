@@ -12,8 +12,8 @@ export default class Weather extends Component {
 
     return (
         <div className="row">
-            <div className="resultado col s12 m8 l6 offset-m2 ofsset-l3">
-                <div className="card-panel light-blue align-center">
+            <div className="resultado col s12 m6 offset-m3">
+                <div className="card-panel light-blue ">
                     <span className="white-text">
                         <h2>Weather of: { name }</h2>
                         <p className="temperatura">
