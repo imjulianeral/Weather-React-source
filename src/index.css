@@ -11,7 +11,7 @@ nav .brand-logo {
 .input-field label {
   color: white;
 }
-/* label focus color */
+
 .input-field input[type=text]:focus + label {
   color: white;
 } 
@@ -42,21 +42,26 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   width: 100%;
 }
 .error {
+  padding: 1rem!important;
   color:white;
   margin-top: 3rem;
   text-align: center;
 }
-.resultado {
-  margin-top: 3rem;
-}
-.resultado h2 {
+.card-panel h2 {
   font-size: 1.6rem;
   text-align: center;
 }
-.resultado p {
+.card-panel p {
   text-align: center;
   font-size: 1.4rem;
 }
-.resultado .temperatura {
-  font-size: 1.8rem;
+.temperatura {
+  font-size: 4rem!important
+}
+.temperatura span {
+  font-size: 2rem!important;
+  vertical-align: super;
+}
+.btn-block {
+  display: block!important;
 }
